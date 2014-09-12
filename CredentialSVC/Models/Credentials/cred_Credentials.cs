@@ -11,7 +11,7 @@ namespace CredentialSVC.Models.Credentials
     {
         public Credential()
         {
-            Invites = new HashSet<Invite>();
+            //Invites = new HashSet<Invite>();
         }
 
         [Key]
@@ -31,6 +31,6 @@ namespace CredentialSVC.Models.Credentials
 
         public virtual Event Event { get; set; }
 
-        public virtual ICollection<Invite> Invites { get; set; }
+        //public virtual ICollection<Invite> Invites { get; set; }
     }
 }

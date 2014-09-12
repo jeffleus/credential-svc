@@ -22,15 +22,15 @@ namespace CredentialSVC.Models.Credentials
         {
             Database.SetInitializer<CredentialContext>(null);
 
-            modelBuilder.Entity<AccessCode>()
-                .HasMany(e => e.Credentials)
-                .WithRequired(e => e.AccessCode)
-                .WillCascadeOnDelete(false);
+            //modelBuilder.Entity<AccessCode>()
+            //    .HasMany(e => e.Credentials)
+            //    .WithRequired(e => e.AccessCode)
+            //    .WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<Credential>()
-                .HasMany(e => e.Invites)
-                .WithRequired(e => e.Credential)
-                .WillCascadeOnDelete(false);
+            //modelBuilder.Entity<Credential>()
+            //    .HasMany(e => e.Invites)
+            //    .WithRequired(e => e.Credential)
+            //    .WillCascadeOnDelete(false);
         }
     }
 }

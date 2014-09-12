@@ -11,7 +11,7 @@ namespace CredentialSVC.Models.Credentials
     {
         public AccessCode()
         {
-            Credentials = new HashSet<Credential>();
+            //Credentials = new HashSet<Credential>();
         }
 
         [Key]
@@ -21,6 +21,6 @@ namespace CredentialSVC.Models.Credentials
         [StringLength(50)]
         public string AccessTitle { get; set; }
 
-        public virtual ICollection<Credential> Credentials { get; set; }
+        //public virtual ICollection<Credential> Credentials { get; set; }
     }
 }
