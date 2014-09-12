@@ -30,6 +30,6 @@ namespace CredentialSVC.Models
             return new ApplicationDbContext();
         }
 
-        public System.Data.Entity.DbSet<CredentialSVC.Models.Credential> Credentials { get; set; }
+        public System.Data.Entity.DbSet<CredentialSVC.Models.Credentials.Guest> Guests { get; set; }
     }
 }

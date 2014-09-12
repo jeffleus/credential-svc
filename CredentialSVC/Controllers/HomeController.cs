@@ -12,6 +12,9 @@ namespace CredentialSVC.Controllers
         {
             ViewBag.Title = "Home Page";
 
+            CredentialSVC.Models.Credentials.CredentialContext ctx = new Models.Credentials.CredentialContext();
+            ViewBag.Events = ctx.Events;
+
             return View();
         }
     }

@@ -8,13 +8,15 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
-using CredentialSVC.Models;
+using CredentialSVC.Models.Credentials;
+using System.Web.Http.Cors;
 
 namespace CredentialSVC.Controllers
 {
+    [EnableCors(origins:"*", headers:"*", methods:"*")]
     public class CredentialsController : ApiController
     {
-        private ApplicationDbContext db = new ApplicationDbContext();
+        private CredentialContext db = new CredentialContext();
 
         // GET: api/Credentials
         public IQueryable<Credential> GetCredentials()
